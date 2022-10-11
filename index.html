@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데월드 어드벤처</title>
+    <script>history.scrollRestoration = "manual"</script>
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div id="popup">
+        <h2>특별방역지침에 따른 파크 이용 안내</h2>
+        <h3><span>적용기간</span>22년 01월 17(월) ~ 22년 02월 20일(일)</h3>
+        <button>자세히 보기</button>
+        <div id="popup_text"><input type="checkbox" name="" id="">오늘 하루 보지 않기</div>
+        <img src="images/icons/close.png" alt="" id="close">
+    </div>
+    <header>
+        <div id="header1">
+            <div id="header1_box">
+                <ul id="header1_left_menu">
+                    <li><img src="images/icons/m_link_icon1.gif" alt="">SEOUL SKY</li>
+                    <li><img src="images/icons/m_link_icon2.gif" alt="">롯데월드 아쿠아리움</li>
+                    <li><img src="images/icons/m_link_icon3.gif" alt="">김해롯데워터파크</li>
+                </ul>
+                <ul id="header1_right_menu">
+                    <li>민속박물관</li>
+                    <li>아이스링크</li>
+                    <li class="fw700">Login</li>
+                    <li class="fw700">회원가입</li>
+                    <li class="fw700">KOR <img src="images/icons/lang_arrow.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div id="header2">
+            <div id="header2_box">
+                <h1 id="logo"><img src="images/icons/logo.png" alt=""></h1>
+                <ul id="header2_menu">
+                    <li>즐길거리
+                        <div class="sub_wrap">
+                            <div class="sub_box">
+                                <div class="sub_box1">
+                                    <img src="images/icons/gnb_timeInfo_bg.png" alt="">
+                                    <h3>02.17 (목)</h3>
+                                    <h4>오늘의 파크</h4>
+                                    <h5>운영시간</h5>
+                                    <h6>10:00 - 21:00</h6>
+                                </div>
+                                <div class="sub_box2">
+                                    <ul>
+                                        <li>어트렉션</li>
+                                        <li>페스티벌</li>
+                                        <li>공연</li>
+                                        <li>다이닝/쇼핑</li>
+                                        <li>다시만난월드 :<br>캐릭터전시회</li>
+                                    </ul>
+                                </div>
+                                <div class="sub_box3">
+                                    <h3><span>앱 다운로드</span>로<br>더 스마트하게!</h3>
+                                    <ul>
+                                        <li>모바일 예매</li>
+                                        <li>모바일 티켓발권</li>
+                                        <li>매직패스 예약</li>
+                                    </ul>
+                                    <img src="images/icons/gnb_appDown_icon.png" alt="" class="sub_box3_arrow">
+                                    <img src="images/gnb_appDown_bg.png" alt="" class="sub_box3_mobile">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>요금/우대혜택
+                        <div class="sub_wrap">
+                            <div class="sub_box">
+                                <div class="sub_box1">
+                                    <img src="images/icons/gnb_timeInfo_bg.png" alt="">
+                                    <h3>02.17 (목)</h3>
+                                    <h4>오늘의 파크</h4>
+                                    <h5>운영시간</h5>
+                                    <h6>10:00 - 21:00</h6>
+                                </div>
+                                <div class="sub_box2">
+                                    <ul>
+                                        <li>이용요금</li>
+                                        <li>이달의 혜택</li>
+                                        <li>연간이용</li>
+                                        <li>롯데월드카드</li>
+                                    </ul>
+                                </div>
+                                <div class="sub_box3">
+                                    <h3><span>앱 다운로드</span>로<br>더 스마트하게!</h3>
+                                    <ul>
+                                        <li>모바일 예매</li>
+                                        <li>모바일 티켓발권</li>
+                                        <li>매직패스 예약</li>
+                                    </ul>
+                                    <img src="icons/gnb_appDown_icon.png" alt="" class="sub_box3_arrow">
+                                    <img src="images/gnb_appDown_bg.png" alt="" class="sub_box3_mobile">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>참여프로그램
+                        <div class="sub_wrap">
+                            <div class="sub_box">
+                                <div class="sub_box1">
+                                    <img src="images/icons/gnb_timeInfo_bg.png" alt="">
+                                    <h3>02.17 (목)</h3>
+                                    <h4>오늘의 파크</h4>
+                                    <h5>운영시간</h5>
+                                    <h6>10:00 - 21:00</h6>
+                                </div>
+                                <div class="sub_box2">
+                                    <ul>
+                                        <li>공연참여</li>
+                                        <li>가든스테이지 좌석예약</li>
+                                    </ul>
+                                </div>
+                                <div class="sub_box3">
+                                    <h3><span>앱 다운로드</span>로<br>더 스마트하게!</h3>
+                                    <ul>
+                                        <li>모바일 예매</li>
+                                        <li>모바일 티켓발권</li>
+                                        <li>매직패스 예약</li>
+                                    </ul>
+                                    <img src="images/icons/gnb_appDown_icon.png" alt="" class="sub_box3_arrow">
+                                    <img src="images/gnb_appDown_bg.png" alt="" class="sub_box3_mobile">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>이용가이드
+                        <div class="sub_wrap">
+                            <div class="sub_box">
+                                <div class="sub_box1">
+                                    <img src="images/icons/gnb_timeInfo_bg.png" alt="">
+                                    <h3>02.17 (목)</h3>
+                                    <h4>오늘의 파크</h4>
+                                    <h5>운영시간</h5>
+                                    <h6>10:00 - 21:00</h6>
+                                </div>
+                                <div class="sub_box2">
+                                    <ul>
+                                        <li>운영/운휴</li>
+                                        <li>파크 이용안내</li>
+                                        <li>편의시설/제도</li>
+                                        <li>오시는 길</li>
+                                        <li>가이드맵</li>
+                                    </ul>
+                                </div>
+                                <div class="sub_box3">
+                                    <h3><span>앱 다운로드</span>로<br>더 스마트하게!</h3>
+                                    <ul>
+                                        <li>모바일 예매</li>
+                                        <li>모바일 티켓발권</li>
+                                        <li>매직패스 예약</li>
+                                    </ul>
+                                    <img src="images/icons/gnb_appDown_icon.png" alt="" class="sub_box3_arrow">
+                                    <img src="images/gnb_appDown_bg.png" alt="" class="sub_box3_mobile">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>소통서비스
+                        <div class="sub_wrap">
+                            <div class="sub_box">
+                                <div class="sub_box1">
+                                    <img src="images/icons/gnb_timeInfo_bg.png" alt="">
+                                    <h3>02.17 (목)</h3>
+                                    <h4>오늘의 파크</h4>
+                                    <h5>운영시간</h5>
+                                    <h6>10:00 - 21:00</h6>
+                                </div>
+                                <div class="sub_box2">
+                                    <ul>
+                                        <li>공지사항</li>
+                                        <li>FAQ</li>
+                                        <li>고객소리함</li>
+                                    </ul>
+                                </div>
+                                <div class="sub_box3">
+                                    <h3><span>앱 다운로드</span>로<br>더 스마트하게!</h3>
+                                    <ul>
+                                        <li>모바일 예매</li>
+                                        <li>모바일 티켓발권</li>
+                                        <li>매직패스 예약</li>
+                                    </ul>
+                                    <img src="images/icons/gnb_appDown_icon.png" alt="" class="sub_box3_arrow">
+                                    <img src="images/gnb_appDown_bg.png" alt="" class="sub_box3_mobile">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="header2_icon_menu">
+                    <li>
+                        <img src="images/icons/header_srch_btn.png" alt="">
+                        <h4>검색</h4>
+                    </li>
+                    <li>
+                        <img src="images/icons/reser_btn.png" alt="">
+                        <h4>예매</h4>
+                    </li>
+                    <li>
+                        <img src="images/icons/group_btn.png" alt="">
+                        <h4>단체</h4>
+                    </li>
+                    <li>
+                        <img src="images/icons/company_btn.png" alt="">
+                        <h4>기업체</h4>
+                    </li>
+                    <li>
+                        <img src="images/icons/product_btn.png" alt="">
+                        <h4>상품몰</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--  -->
+    <div id="slide">
+        <ul id="slide_imgbox">
+            <li><img src="images/slide1.jpg" alt=""></li>
+            <li><img src="images/slide2.jpg" alt=""></li>
+            <li><img src="images/slide3.jpg" alt=""></li>
+            <li><img src="images/slide4.jpg" alt=""></li>
+            <li><img src="images/slide5.jpg" alt=""></li>
+            <li><img src="images/slide6.jpg" alt=""></li>
+            <li><img src="images/slide7.jpg" alt=""></li>
+            <li><img src="images/slide8.jpg" alt=""></li>
+        </ul>
+        <img src="images/icons/imgRoll_prev.png" alt="" id="slide_prevbtn">
+        <img src="images/icons/imgRoll_next.png" alt="" id="slide_nextbtn">
+        <div id="slide_btn">
+            <ul>
+                <li><img src="images/icons/imgRoll_indi_on.png" alt=""></li>
+                <li><img src="images/icons/imgRoll_indi.png" alt=""></li>
+                <li><img src="images/icons/imgRoll_indi.png" alt=""></li>
+                <li><img src="images/icons/imgRoll_indi.png" alt=""></li>
+                <li><img src="images/icons/imgRoll_indi.png" alt=""></li>
+                <li><img src="images/icons/imgRoll_indi.png" alt=""></li>
+                <li><img src="images/icons/imgRoll_indi.png" alt=""></li>
+                <li><img src="images/icons/imgRoll_indi.png" alt=""></li>
+            </ul>
+            <div id="slide_pause">
+                <img src="images/icons/play_bt.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div id="operating_time">
+        <img src="images/icons/gnb_timeInfo_bg.png" alt="">
+        <h3>오늘의 파크 운영시간</h3>
+        <h4>10:00 - 21:00</h4>
+    </div>
+    <!--  -->
+    <div id="event">
+        <h2>나에게 꼭 맞는 혜택<span class="fw300">알아볼까요?</span></h2>
+        <h4>현재 진행 중인 할인혜택을 알아보세요.</h4>
+        <ul>
+            <li>
+                <img src="images/event1.jpg" alt="">
+                <h5>26,500원</h5>
+                <h3>롯데월드 제휴카드 온라<span>•••</span></h3>
+                <class class="eventbox"></class>
+            </li>
+            <li>
+                <img src="images/event2.jpg" alt="">
+                <h5>29,500원</h5>
+                <h3>제휴카드 현장 프로모션</h3>
+                <class class="eventbox"></class>
+            </li>
+            <li>
+                <img src="images/event3.jpg" alt="">
+                <h5>22,222원</h5>
+                <h3>신나는 2월, 설레는 202<span>•••</span></h3>
+                <class class="eventbox"></class>
+            </li>
+            <li>
+                <img src="images/event4.jpg" alt="">
+                <h5>28,500원</h5>
+                <h3>해피 겨울방학</h3>
+                <class class="eventbox"></class>
+            </li>
+        </ul>
+        <button>더 많은 혜택 보기</button>
+    </div>
+    <!--  -->
+    <div id="parade">
+        <h2><span class="fw300">다양한 공연 및 퍼레이드</span>
+            <span class="fw700_2">정보를 한눈에!</span></h2>
+        <p>다양한 공연 정보를 확인해보세요.</p>
+        <ul>
+            <li><img src="images/202012291024150880_276.jpg" alt=""><span class="parade_text">로티스 어드벤처 퍼레이드</span></li>
+            <li><img src="images/202201100144320930_276.jpg" alt=""><span class="parade_text">로티의 라이브 쇼!쇼!쇼</span></li>
+            <li><img src="images/202102081217495590_276.jpg" alt=""><span class="parade_text">민속 한마당</span></li>
+            <li><img src="images/202105120228067320_276.jpg" alt=""><span class="parade_text">로티로티 송 앤 댄스2</span></li>
+            <li><img src="images/202102151212017690_276.jpg" alt=""><span class="parade_text">엘비스 밴드 쇼</span></li>
+            <li><img src="images/201912270455349210_276.jpg" alt=""><span class="parade_text">빅 밴드 쇼</span></li>
+            <li><img src="images/202012310613493800_276.jpg" alt=""><span class="parade_text">캐릭터 환타지아</span></li>
+            <li><img src="images/201912020120211100_276.jpg" alt=""><span class="parade_text">로티의 모험2 : 사이버 어드벤처</span></li>
+            <li><img src="images/201912230542317240_276.jpg" alt=""><span class="parade_text">렛츠 드림 나이트 퍼레이드</span></li>
+            <li><img src="images/202008050444485270_276.jpg" alt=""><span class="parade_text">매직캐슬 라이츠업</span></li>
+            <li><img src="images/201906250408247370_276.jpg" alt=""><span class="parade_text">미라클 나이트</span></li>
+        </ul>
+        <div id="parade_drag"><img src="images/icons/parade_btn.png" alt=""></div>
+        <button id="parade_bt1">더 많은 공연 보기</button>
+        <button id="parade_bt2">참여 프로그램 보기</button>
+    </div>
+    <!--  -->
+    <div id="attraction">
+        <h2>재미있고 즐거운 <span>다양한 어트랙션!</span></h2>
+        <div id="attraction_bt">
+            <button id="attraction_bt1">아이와 함께</button>
+            <button id="attraction_bt2">야외에서 신나게</button>
+            <button id="attraction_bt3">실내에서 쾌적하게</button>
+        </div>
+        <div id="attraction_box">
+            <ul id="attraction_box1">
+                <li>
+                    <img src="images/202010231014353460.jpg" alt="">
+                    <h4>언더씨킹덤</h4>
+                    <p>아이와 함께 떠나는 해저왕국 탐험!</p>
+                </li>
+                <li>
+                    <img src="images/20180619061833985.jpg" alt="">
+                    <h4>유레카</h4>
+                    <p>높이높이 날아올라요~</p>
+                </li>
+                <li>
+                    <img src="images/202006241107064920.jpg" alt="">
+                    <h4>점핑피쉬</h4>
+                    <p>신나는 해저여행</p>
+                </li>
+                <li>
+                    <img src="images/20180619061904008.jpg" alt="">
+                    <h4>스윙팡팡</h4>
+                    <p>로티와 친구들이 함께 팡팡~</p>
+                </li>
+                <li>
+                    <img src="images/202006241108538410.jpg" alt="">
+                    <h4>매직붕붕카</h4>
+                    <p>헨젤과 그레텔을 구해주세요!</p>
+                </li>
+                <li>
+                    <img src="images/202007241119261500.jpg" alt="">
+                    <h4>키즈토리아</h4>
+                    <p>마음껏 즐길수 있는 거대한 동화속 세상</p>
+                </li>
+            </ul>
+            <ul id="attraction_box2">
+                <li>
+                    <img src="images/20180619061936068.jpg" alt="">
+                    <h4>자이로스핀</h4>
+                    <p>자이로 시리즈 3번째!</p>
+                </li>
+                <li>
+                    <img src="images/20180619061946525.jpg" alt="">
+                    <h4>혜성특급</h4>
+                    <p>특급열차와 함께 떠나요</p>
+                </li>
+                <li>
+                    <img src="images/20180619061954802.jpg" alt="">
+                    <h4>자이로스윙</h4>
+                    <p>자유낙하와 자유회전을 동시에</p>
+                </li>
+                <li>
+                    <img src="images/20180619062006253.jpg" alt="">
+                    <h4>아트란티스</h4>
+                    <p>어트랙션의 혁명 최고의 스릴</p>
+                </li>
+                <li>
+                    <img src="images/20180619062016631.jpg" alt="">
+                    <h4>번지드롭</h4>
+                    <p>번지점프의 짜릿한 묘미!</p>
+                </li>
+                <li>
+                    <img src="images/20180619062030119.jpg" alt="">
+                    <h4>회전그네</h4>
+                    <p>빙글빙글 멈출 수 없는 재미</p>
+                </li>
+            </ul>
+            <ul id="attraction_box3">
+                <li>
+                    <img src="images/20180619062050445.jpg" alt="">
+                    <h4>후룸라이드</h4>
+                    <p>색다른 모험,쥬라기 시대로</p>
+                </li>
+                <li>
+                    <img src="images/20180619062100417.jpg" alt="">
+                    <h4>신밧드의 모험</h4>
+                    <p>신비한 모험을 떠나요~</p>
+                </li>
+                <li>
+                    <img src="images/20180619062112176.jpg" alt="">
+                    <h4>파라오의 분노</h4>
+                    <p>실감나는 라이드를 즐기자!</p>
+                </li>
+                <li>
+                    <img src="images/20180619062121981.jpg" alt="">
+                    <h4>스페인 해적선</h4>
+                    <p>거친 파도와 같은 아찔함!</p>
+                </li>
+                <li>
+                    <img src="images/20180619062130150.jpg" alt="">
+                    <h4>후렌치 레볼루션</h4>
+                    <p>숨막히는 롤러코스터의 매력</p>
+                </li>
+                <li>
+                    <img src="images/202006241113232060.jpg" alt="">
+                    <h4>범퍼카</h4>
+                    <p>좌충우돌 부딪히는 즐거운 소리</p>
+                </li>
+            </ul>
+        </div>
+        <button id="attraction_morebt1">더 많은 어트랙션 보기</button>
+        <button id="attraction_morebt2">운휴 정보 보러가기</button>
+    </div>
+    <!--  -->
+    <div id="special">
+        <div id="special_title">
+            <h2>롯데월드를 좀 더</h2>
+            <h3>특별하게 즐기고 싶다면!</h3>
+            <p>오늘 롯데월드의 소식을 만나보세요.</p>
+        </div>
+        <div id="special_list">
+            <h4>특별한 경험</h4>
+            <ul>
+                <li>
+                    <img src="images/mainCon4_img3_20211231.jpg" alt="">
+                    <p>샤론캣 프리미엄라운지</p>
+                </li>
+                <li>
+                    <img src="images/mainCon4_img2.jpg" alt="">
+                    <p>롯데월드 어드벤처 선물권</p>
+                </li>
+                <li>
+                    <img src="images/mainCon4_img1.jpg" alt="">
+                    <p>연간이용안내</p>
+                </li>
+                <li>
+                    <img src="images/maincon4_covid.jpg" alt="">
+                    <p>코로나19 예방 종합안내</p>
+                </li>
+            </ul>
+        </div>
+        <div id="special_news">
+            <table>
+                <tr>
+                    <td>롯데월드 소식</td>
+                    <td>더보기 <img src="images/icons/main_more_icon.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td>코로나19 예방을 위한 롯데월드 어드벤처</td>
+                    <td>2020.08.11</td>
+                </tr>
+                <tr>
+                    <td>공연참여 프로그램 운영 안내</td>
+                    <td>2021.12.17</td>
+                </tr>
+                <tr>
+                    <td>롯데월드 로티프렌즈 색칠놀이</td>
+                    <td>2021.10.26</td>
+                </tr>
+                <tr>
+                    <td>월드 카트레이싱 GRAND OPEN</td>
+                    <td>2021.06.10</td>
+                </tr>
+            </table>
+        </div>
+        <div id="special_mobile">
+        </div>
+    </div>
+    <!--  -->
+    <footer>
+        <div id="quick">
+            <img src="images/icons/quick_btn.png" alt="">
+            <p>QUICK</p>
+        </div>
+        <div id="footer_top_bt">TOP
+            <div></div>
+        </div>
+        <div id="footer1">
+            <ul id="footer1_menu1">
+                <li>롯데월드 소개</li>
+                <li>기업 제휴 및 입점 문의</li>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+                <li>이메일무단수집거부</li>
+                <li>Compliance Program</li>
+                <li>사이트맵</li>
+                <li>인재채용</li>
+                <li>그룹PR</li>
+            </ul>
+            <ul id="footer1_menu2">
+                <li><img src="images/icons/sns_btn1.png" alt=""></li>
+                <li><img src="images/icons/sns_btn2.png" alt=""></li>
+                <li><img src="images/icons/sns_btn3.png" alt=""></li>
+            </ul>
+        </div>
+        <div id="footer2">
+            <h3 id="footer_logo"><img src="images/icons/footer_logo.png" alt=""></h3>
+            <div id="footer2_center">
+                <ul>
+                    <li>서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드<img src="images/icons/header_gnb_border2.jpg" alt=""></li>
+                    <li>대표자 : 최홍훈</li>
+                    <li>사업자등록번호 : 219-85-00014<img src="images/icons/header_gnb_border2.jpg" alt=""></li>
+                    <li>통신판매업신고번호 : 송파 제5513호<img src="images/icons/header_gnb_border2.jpg" alt=""></li>
+                    <li>전화 : 1661-2000</li>
+                </ul>
+                <p>COPYRIGHT 2018 LOTTEWORLD. ALL RIGHTS RESERVED.</p>
+                <div id="footer2_bottom">
+                    <div id="footer2_bottom1">
+                        <img id="ism_icon" src="images/icons/isms_icon.png" alt="">
+                        <ul>
+                            <li>인증범위 <img src="images/icons/header_gnb_border2.jpg" alt=""></li>
+                            <li>온라인예매 서비스 운영(롯데월드)</li>
+                            <li>유효기간 <img src="icons/header_gnb_border2.jpg" alt=""></li>
+                            <li>2020.11.18~2023.11.17</li>
+                        </ul>
+                    </div>
+                    <div id="footer2_bottom2">
+                        <img src="images/icons/131313.png" alt="" id="ism_icon2">
+                        <p>한국서비스대상 명예의전당</p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer2_right">
+                <select name="" id="">
+                    <option value="">계열사 관련 사이트</option>
+                    <option value="">롯데그룹</option>
+                    <option value="">L.POINT</option>
+                    <option value="">롯데그룹채용</option>
+                    <option value="">롯데제과</option>
+                    <option value="">- 빼빼로</option>
+                    <option value="">- 헬스원</option>
+                    <option value="">롯데칠성음료</option>
+                    <option value="">- 롯데칠성몰</option>
+                    <option value="">롯데리아</option>
+                    <option value="">- 롯데리아몰</option>
+                    <option value="">엔제리너스</option>
+                    <option value="">- 엔제리너스몰</option>
+                    <option value="">나뚜루</option>
+                    <option value="">크리스피크림도넛</option>
+                    <option value="">롯데푸드</option>
+                    <option value="">- 파스퇴르</option>
+                    <option value="">- 파스퇴르몰</option>
+                    <option value="">- 파스퇴르아이</option>
+                    <option value="">- 쉐푸드</option>
+                    <option value="">- 엔네이처</option>
+                    <option value="">- 롯데비엔나</option>
+                    <option value="">- 키스틱</option>
+                    <option value="">- 의성마늘햄</option>
+                    <option value="">-WINE</option>
+                    <option value="">롯데아사히주류</option>
+                    <option value="">롯데칠성주류</option>
+                    <option value="">롯데백화점</option>
+                    <option value="">- 엘롯데</option>
+                    <option value="">- 영플라자</option>
+                    <option value="">- 프리미엄아울렛</option>
+                    <option value="">- 롯데아울렛</option>
+                    <option value="">- 상품본부</option>
+                    <option value="">에비뉴엘</option>
+                    <option value="">롯데마트</option>
+                    <option value="">- 롯데마트 홍보</option>
+                    <option value="">롯데하이마트</option>
+                    <option value="">- 롯데하이마트 홍보</option>
+                    <option value="">토이저러스</option>
+                    <option value="">롯데슈퍼</option>
+                    <option value="">롯데빅마켓</option>
+                    <option value="">롯데시네마</option>
+                    <option value="">롯데홈쇼핑</option>
+                    <option value="">코리아세븐</option>
+                    <option value="">유니클로</option>
+                    <option value="">무인양품</option>
+                    <option value="">롯데상사</option>
+                    <option value="">롯데닷컴</option>
+                    <option value="">롯데유통사업본부</option>
+                    <option value="">샤롯데씨어터</option>
+                    <option value="">H&B(롭스)</option>
+                    <option value="">롯데피트인</option>
+                    <option value="">롯데호텔</option>
+                    <option value="">롯데면세점</option>
+                    <option value="">롯데인터넷면세점</option>
+                    <option value="">부산롯데인터넷면세점</option>
+                    <option value="">롯데월드</option>
+                    <option value="">- 워터파크</option>
+                    <option value="">- 아쿠아리움</option>
+                    <option value="">롯데물산</option>
+                    <option value="">롯데월드타워&몰</option>
+                    <option value="">롯데몰 김포공항점</option>
+                    <option value="">롯데제이티비</option>
+                    <option value="">롯데손해보험</option>
+                    <option value="">- 롯데하우머치</option>
+                    <option value="">롯데카드</option>
+                    <option value="">롯데캐피탈</option>
+                    <option value="">롯데건설</option>
+                    <option value="">- 롯데캐슬</option>
+                    <option value="">한국후지필름</option>
+                    <option value="">- 후지필름쇼핑몰</option>
+                    <option value="">롯데알미늄</option>
+                    <option value="">- 롯데이라이프</option>
+                    <option value="">롯데케미칼</option>
+                    <option value="">롯데엠시시</option>
+                    <option value="">캐논코리아 비즈니스솔루션</option>
+                    <option value="">롯데기공</option>
+                    <option value="">롯데인재개발원</option>
+                    <option value="">사이버 인재개발원</option>
+                    <option value="">롯데정보통신</option>
+                    <option value="">롯데자이언츠</option>
+                    <option value="">롯데스카이힐C.C</option>
+                    <option value="">롯데리조트 부여</option>
+                    <option value="">롯데리조트 제주</option>
+                    <option value="">롯데리조트 속초</option>
+                    <option value="">대홍기획</option>
+                    <option value="">마이비</option>
+                    <option value="">롯데중앙연구소</option>
+                    <option value="">롯데환경경영</option>
+                    <option value="">롯데로지스틱스</option>
+                    <option value="">롯데재단</option>
+                    <option value="">롯데렌터카</option>
+                    <option value="">롯데콘서트홀</option>
+                </select>
+                <img src="images/img_lotteon_pc.jpg" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
